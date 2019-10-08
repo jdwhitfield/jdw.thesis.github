@@ -1,0 +1,172 @@
+%% frontmatter.tex
+%%
+
+
+
+% UNDERLYING SPACING FOR WHOLE DOCUMENT:
+% Single spacing: takes place of `draft' mode, without losing figures.
+\ssp
+
+% makes double-spaced: (for GSAS requirement, microfiche):
+%\dsp
+
+
+
+
+
+\title{At the intersection of quantum computing and quantum chemistry}
+\author{James Daniel Whitfield}
+\degreemonth{November} % month final submission occurs.
+\degreeyear{2011}
+\degree{Doctor of Philosophy}
+\field{Chemical Physics}
+\department{Chemistry and Chemical Biology}
+\advisor{Al\'an Aspuru-Guzik} % Category added by JDW
+
+\maketitle
+\copyrightpage
+
+
+\begin{abstract}
+% limited to 1.5 pages, double-spaced (Registrar's Office guidelines).
+% Also limited to 350 words. 
+Quantum chemistry is concerned with solving the Schr\"odinger equation for chemically relevant systems.  This is typically done 
+by making useful and systematic approximations which form the basis for model chemistries.
+A primary contribution of this dissertation, is taking concrete steps toward establishing a new model chemistry based on quantum computation.  Electronic energies of the system can be efficiently obtained to fixed accuracy using quantum algorithms exploiting the ability of quantum computers to efficiently simulate the time evolution of quantum systems.  
+The quantum circuits for simulation of arbitrary electronic Hamiltonians are given using quantum bits associated with single particle basis functions.  This model chemistry is applied to hydrogen molecule as a case study where all necessary quantum circuits are clearly laid out.
+Furthermore, our collaboration to experimentally realize a simplified version of the hydrogen molecule quantum circuit is also included in this thesis. 
+Finally, alternatives to the gate model of quantum computation are pursued by exploring models based on the quantum adiabatic theorem and on the generalization of random walks.
+
+\end{abstract}
+
+
+%We show how a systematic subtraction of the `special' components of a general
+%deformation can be used to give an improved
+%version of the `wall formula' estimate for $\mu(0)$.
+%We believe this is the first study of $\omega$-dependent heating rate in
+%billards, and the first consideration of the `special' nature of dilation.
+
+
+
+% cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+\begin{citations}
+
+
+\vspace{0.8in}
+
+\ssp
+\noindent
+Chapter~\ref{chp:elec-struct} is a largely unmodified contribution to an undergraduate textbook:
+\begin{quote}
+	\textit{Mathematical modeling II: Quantum mechanics and spectroscopy}\\ T. L. Story 
+	with chapter on electronic structure contributed by J. D. Whitfield\\
+	Educational Publisher.  To appear Fall 2011.
+\end{quote}
+Parts of the review article,
+\begin{quote}
+\textit{Simulating chemistry with quantum computers}\\
+I. Kassal$^*$, J. D. Whitfield$^*$ A. Perdomo-Ortiz, M.-H. Yung, and A. Aspuru-Guzik\\
+Annual Reviews of Physical Chemistry. Volume 62, Pages 185-207 (2011)
+\end{quote}
+appear in many places throughout the thesis. Many of the major themes of the thesis are found in,
+\begin{quote}
+\textit{Simulation of electronic structure Hamiltonians using quantum computers}\\
+J. D. Whitfield, J. D. Biamonte, and A. Aspuru-Guzik\\
+Molecular Physics. Volume 109, 735 (2011)
+\end{quote}
+and large portions of this publication have been incorporated into Chapters~\ref{chp:measure}, \ref{chp:qsim}, and \ref{chp:h2}.
+The description of the experimental simulation of the hydrogen molecule in Chapter \ref{chp:h2} is largely based on
+\begin{quote}
+\textit{Towards quantum chemistry on a quantum computer}\\
+B. P. Lanyon, J. D. Whitfield, G. G. Gillet, M. E. Goggin, M. P. Almeida, I. Kassal, J. D. Biamonte,
+M. Mohseni, B. J. Powell, M. Barbieri, A. Aspuru-Guzik, and A. G. White\\
+Nature Chemistry. Volume 2, 106 (2010)
+\end{quote}
+Chapters~\ref{chp:AQS} and \ref{chp:qsw} apart from minor modifications appear respectively in,
+\begin{quote}
+\textit{Adiabatic quantum simulators}\\
+J. D. Biamonte, V. Bergholm, J. D. Whitfield, J. Fitzsimons, and A. Aspuru-Guzik\\
+AIP Advances. Volume 1, 022126 (2011)
+\vskip.5cm	
+\textit{Quantum stochastic walks: A generalization of classical random walks and quantum walks}\\
+J. D. Whitfield, C. A. Rodr{\'i}guez-Rosario, and A. Aspuru-Guzik.\\
+Physical Review A. Volume 81, 022323 (2010)
+\end{quote}
+Other work I was involved in but not explicitly included in the thesis are the articles
+\begin{quote}
+\textit{Simulation of classical thermal states on a quantum computer: A transfer-matrix approach}\\
+M.-H. Yung, D. Nagaj, J. D. Whitfield, and A. Aspuru-Guzik\\
+Physical Review A. Volume 82, 060302(R) (2010)	
+\vskip.5cm
+\textit{Solving quantum ground-state problems with nuclear magnetic resonance}\\
+Z. Li, M.-H. Yung, H. Chen, D. Lu, J. D. Whitfield, X. Peng, A. Aspuru-Guzik, and J. Du\\
+Accepted to Scientific Reports. Preprint available at arXiv:1106.0440
+\end{quote}
+
+\end{citations}
+
+\newpage
+\addcontentsline{toc}{section}{Table of Contents}
+
+\tableofcontents
+
+% these are optional in the Jan 2000 Harvard thesis GSAS guide:
+%\listoffigures
+%\listoftables
+
+\begin{acknowledgments}
+
+First, I want to acknowledge the people who have guided me thus far. Foremost, my advisor, Al{\'a}n Aspuru-Guzik, for teaching me how to approach scientific problems, to pool resources, and to remain positive through it all.   I cannot adequately express my thanks for the past 5 years.  I'd like to thank, my Dad, James Whitfield, Jr. who stood behind me from the beginning and watched me put my best foot forward; my high school freshman mathematics teacher, Mike McRae, for teaching me how to enjoy mathematics; Professor Troy L. Story for believing in me all these years; Professor William A. Lester for the introduction to academic research; and Professors Eric J. Heller and Scott Aaronson for serving in my advising committee and challenging me think deeply about why we do science.
+
+Second, I want to thank those who ventured the trenches with me.  From Al{\'a}n's group (or should I say research division) I learned immensely from discussions with C\'esar Rodriguez-Rosario, Man-Hong Yung, Ville Bergholm, David Tempel, Sergio Boixo, Jarrod McClean, Ivan Kassal, Patrick Rebentrost, Alejandro Perdomo-Ortiz, Mark Watson, Kenta Hongo, Joel Yung-Zhou, Sangwoo Shim, Roberto (Robo) Olivares-Amaya, Leslie Vogt, Johannes Hachmann, Roel S\'anchez-Carrera, Ali Najmaie, \c{S}ule Atahan-Evrenk, Dmitrij Rappoport, Semion Saikin and visiting professors Carlos Amador-Bedolla, Salvador Venegas-Andraca, and especially Peter Love. Jacob Biamonte, Ben Lanyon, and  Cody Nathan Jones have also contributed to my scientific development in their own ways.
+
+Third, my friends outside the laboratory have made my overall experience one I won't regret.  The long list includes, The W. E. B. DuBois Society, Harvard Minority Scientists Group, Toastmasters, Kunal Surana, Dunster House and all the Dunsterites, Professor and Mrs. Porter, Edwin Homan, Brian Roland and Alexander Shalack among many others. 
+
+Others who I wish to thank are the agencies that funded my research: The Center for Excitonics, The Army Research Office and Harvard's Graduate Prize Fellowship. Thanks to Prince Georges County, Maryland, forever home, for a wonderful place to grow up. 
+
+I have to thank my biggest fan, my mom, Wendelin Whitfield, for being a fantastic supporter for all of these years. Thank to my sister, Jamie, for being there for me and proofreading so many of my papers and essays over the years.  Thank you to my whole family for everything.  Lastly, but, far from least, I have to thank my beautiful and supportive wife, Leslie Whitfield, for standing beside me through the whole process.  
+
+\end{acknowledgments}
+
+
+%	First and foremost, I want to acknowledge my wife, Leslie A. Hill, for supporting me through this entire process.  Both of my parents and my sister have been hugely influential.  In fact, my entire family from Kalif talking me into graduate school to my uncles and my aunts for all of their support.
+
+%	My scientific development was the result of many influences but the most substantial has been Al{\'a}n. From him I have learned how to approach scientific problems, pool resources and stay positive.  Equally important has been the team Al{\'a}n has put together.  I have learned much from my peers in the group:  Ivan Kassal, Alejandro Perdomo, Leslie Vogt, David Tempel, Partick Rebentrost, Sangwoo Shim,  Joel Yung-Zhou, Roberto Amaya-Olivares, Jarrod McClean.  The excellent corps of post-docs has also been extremely helpful. Ville Bergholm, Roel Sigi-Schanez, Sule Atahan, Dimitry Rappaort, Siemion Salka, Ali Najamie, Mark Watson, Kenta Hong, Johannes Hachmann, and John Parkhill. I have to especially acknowledge Ces{\'a}r Rosario-Rodriguez and Man-Hong Yung for their contributions to my scientific development.
+
+%		Jacob Biamonte and Peter Love have by far been the most important influences outside of the group.  Professor Carlos Amador-XX, Salvador Venegas-Andraca, and Eric Heller have also taught me many things about how to conduct science.  Professors Dudley Herschbach, William Kempler,  Vinny Man-aranhalra, and Elita Pastur-Landsis have been helpful in shaping my character.  I also want to thank Professor Roger and Ann Porter and the entire Dunster House community for providing a wonderful residential experience.  Thanks goes out to Dr. Brian Roland and Dr. Alexander Shalck for making me feel welcomed at CCB.
+
+%Ben Lanyon, HMSG, DuBois, Toastmasters, Derriba, Nick, Sorrell and Peter
+
+%	I would me remiss to forget my teachers at Morehouse College.  Formost, Professor Troy L. Story for his mentoring and for sparking my interest in physical chemistry.  I also want to thank Professor William A. Lester for  encouraging and supporting my ambitions to pursue quantum chemistry. 
+
+%I want to acknowledge Leslie Hill, Al{\'a}n Aspuru-Guzik, my family, instructors, teachers, patient people, all the silent observers and unknown actors, as well as all the things seen and unseen for kindly ushering me along the way.
+
+
+
+%\end{acknowledgments}
+
+
+%\textbf{People not to forget}
+%Alan, Carlos, Story,  Parents, Jamie, family, Peter Love, Jake, Ville, Man-Hong, Cesar, Ivan, Alejandro, Ali, Sule, Leslie Vogt, Roberto, Aaronson, Sigi, Mark Watson, Johannes, Partick, David, Dmitri Rappaport, Semion Salka,  Joel, Salvador, Venegas-Andraca, Brian Roland, DuBois Society, Ernesto, Edwin, Profs Heller, Park,  Prof Vinny, Prof Herschbach and Prof Kempler, Porters and students at Dunster, Sorrell Massenberg, Harvard Minority Scientist Group,  Gods, Morehouse guys.
+%P. Love, M. Mohseni, B. Lanyon and A. White.
+%I'd like to thank S. Aaronson, P. Shor and  for the introduction to quantum computer science.  I also want to thank A. Aspuru-Guzik, D. Temple, M.-H. Yung and S. Boixo for helpful discussion.
+%We thank Patrick Rebentrost, Man-Hong Yung, Viv Kendon and Terry Rudolph for helpful discussions.
+
+%ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+\dedication
+
+\begin{quote}
+\hsp
+\em
+\raggedleft
+Dedication
+\end{quote}
+Dedicated all the things seen and unseen for the space and time to look around.
+
+
+
+\newpage
+
+\startarabicpagination
+
+%%% end
